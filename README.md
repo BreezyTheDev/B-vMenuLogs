@@ -2,7 +2,7 @@
 
 ## What is it?
 
-This script is quite simple, it logs public net events written inside vMenu's code. Unforunately, I couldn't log all the events but forunately I got some good ones. 
+This script is quite simple, it logs public net events written inside vMenu's code. Unfortunately, I couldn't log all the events but fortunately I got some good ones.
 
 ## Configuration
 
