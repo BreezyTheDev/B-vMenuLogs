@@ -36,7 +36,7 @@ RegisterNetEvent('vMenu:SummonPlayer', function(target)
     local sourceID = source
     local sourceName = GetPlayerName(sourceID)
     local targetName = GetPlayerName(target)
-    sendToDiscord(webhookvmenu, whcolor, "vMenu Event: Summon Player", "**From:**\n**ID: "..sourceID.."** | "..sourceName.."".."\n\n**To:**\n**ID: "..target.."** | ".. targetName)
+    sendToDiscord(webhookvmenu, whcolor, "vMenu Event: Summon Player", "**ID: "..sourceID.."** | "..sourceName.. " has summoned ".."**ID: "..target.."** | ".. targetName)
 end)
 
 -- Functions
