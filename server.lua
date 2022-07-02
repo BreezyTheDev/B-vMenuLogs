@@ -39,6 +39,18 @@ RegisterNetEvent('vMenu:SummonPlayer', function(target)
     sendToDiscord(webhookvmenu, whcolor, "vMenu Event: Summon Player", "**ID: "..sourceID.."** | "..sourceName.. " has summoned ".."**ID: "..target.."** | ".. targetName)
 end)
 
+RegisterNetEvent('vMenu:UpdateServerWeather', function(result)
+    local sourceID = source
+    local sourceName = GetPlayerName(sourceID)
+    sendToDiscord(webhookvmenu, whcolor, "vMenu Event: Server Weather", "**ID: "..sourceID.."** | "..sourceName.." has updated the weather to: **"..result.."**")
+end)
+
+RegisterNetEvent('vMenu:UpdateServerTime', function(result)
+    local sourceID = source
+    local sourceName = GetPlayerName(sourceID)
+    sendToDiscord(webhookvmenu, whcolor, "vMenu Event: Server Time", "**ID: "..sourceID.."** | "..sourceName.." has updated the time to: **"..result..":00**")
+end)
+
 -- Functions
 function sendToDiscord(webhook, color, name, message, footer)
     -- This is the embed configuration that will be sent in the http request below.
